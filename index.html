@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Airlines</title>
+    <link rel = "icon" type = "image/webp" href = "images.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar-expand-sm">
+        <div class="container-fluid fixed-top">
+            <div class="logos">
+                <h6>American Airlines</h6> <img src="images.webp" alt="" class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li>
+                    <a href="#" class="link">Plan Travel</a>
+                </li>
+                <li><a href="#" class="link">Travel Information</a></li>
+                <li><a href="#" class="link">AAdvantage</a></li>
+                <li class=" dropdown">
+                    <a href="#" class="dropdown-toggle" aria-expanded="true" data-bs-toggle="dropdown">English</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">español</a>
+                        <a href="#" class="dropdown-item">French</a>
+                    </div>
+                </li>
+                <button class="btn">
+                    LOG IN
+                </button>
+            </ul>
+
+        </div>
+    </nav>
+    <section id="home" class="w3-container w3-animate-zoom">
+        <div class="row ps-5">
+            <div class="col-6 opacity-75">
+                <h1>Travel with peace of mind</h1>
+                <p>Visit your favourite countries in hapiness and get ticket at affordable price</p>
+                <div class="search">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white"><i class="fa fa-search" aria-hidden="true"></i> <input
+                                type="text" class="form-control" placeholder="Search"></span>
+
+                    </div>
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+            <div class="col-6"></div>
+        </div>
+    </section>
+    <section id="book-a-flight" class="mb-5">
+        <div class="btn-group bg-white">
+            <button data-number="1" class="btn btn-light"><i class="fa-solid fa-plane-up"></i> Book Flight</button>
+            <button data-number="2" class="btn"><i class="fa-solid fa-tag"></i> Manage Trip/Check In</button>
+            <button data-number="3" class="btn"><i class="fa-solid fa-clock"></i> Flight Status</button>
+        </div>
+        <div class="form-content">
+            <form action="#" data-number="1" class="form-control flight pb-3 ps-4">
+                <div class="row mb-2 pt-3">
+                    <div class="col-4">
+                        <input class="form-check-input" type="radio" name="flight-type" checked>
+                        <label class="radio-label" for="">
+                            <p>Round Trip</p>
+                        </label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-check-input" type="radio" name="flight-type">
+                        <label class="radio-label" for="">
+                            <p>One Way</p>
+                        </label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-check-input" type="radio" name="flight-type">
+                        <label class="radio-label" for="">
+                            <p>Redeem Miles</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-4">
+                        <label for="">From</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="fa fa-search" aria-hidden="true"></i>
+                                <input type="text" class="form-control" placeholder="City or Airport"></span>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="">To</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="fa fa-search" aria-hidden="true"></i>
+                                <input class="form-control" type="text" placeholder="City or Airport"></span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="">No of Passenger</label>
+                        <select class="form-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <label for="">Class</label>
+                        <select class="form-select">
+                            <option>Economy</option>
+                            <option>Business</option>
+                            <option>First</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="">Departure Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="">Return Date</label><br>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="mt-3 book">
+                    <button class="btn btn-primary">Book a Flight</button>
+                </div>
+            </form>
+            <form action="#" data-number="2" class="form-control flight pb-3 ps-4">
+                <div class="row mb-5 mt-3">
+                    <div class="col-4">
+                        <label for="">First Name</label>
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col-4">
+                        <label for="">Last Name</label>
+                        <input class="form-control" type="text" placeholder="Last Name">
+                    </div>
+                    <div class="col-4">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-4">
+                        <label for="">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="+2347068508279">
+                    </div>
+                    <div class="col-4">
+                        <label for="">Internationa Passport Number</label>
+                        <input class="form-control" type="number" placeholder="***********">
+                    </div>
+                    <div class="col-4">
+                        <label for="">Ticket Number</label>
+                        <input type="number" class="form-control" placeholder="***********">
+                    </div>
+                </div>
+                <div class="mt-3 book">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            <form action="#" data-number="3" class="form-control flight pb-3 ps-4">
+                <div class="row mb-5 mt-3">
+                    <div class="col-4">
+                        <label for="">Destination</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="fa fa-search" aria-hidden="true"></i>
+                                <input class="form-control" type="text" placeholder="City or Airport"></span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="">Flight Number</label>
+                        <input class="form-control" type="number" placeholder="Last Name">
+                    </div>
+                    <div class="col-4">
+                        <label for="">Departure Date</label>
+                        <input type="date" class="form-control" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="mt-3 book">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="fly-with-us mt-5 reveal fade-bottom">
+        <h3>Why fly with us?</h3>
+        <div class="row">
+            <div class="col-3 bg-primary text-light reveal fade-bottom">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h5>Unbeatable Deals</h5>
+                <p>Experience more for less with our exclusive deals and packages</p>
+            </div>
+            <div class="col-3 reveal fade-bottom2">
+                <i class="fa-solid fa-medal"></i>
+                <h5>Most Trusted Plartform</h5>
+                <p>Over 20 million+ tickets sold and we are rated 'Excellent' by 'TrustPilot'</p>
+            </div>
+            <div class="col-3 reveal fade-bottom3">
+                <i class="fa-solid fa-ban"></i>
+                <h5>Cancellable Tickets</h5>
+                <p>Stay Flexible with our free cancellation option on ypur ticket</p>
+            </div>
+            <div class="col-3 reveal fade-bottom4">
+                <i class="fa-solid fa-shield"></i>
+                <h5>Security Guaranteed</h5>
+                <p>Ypur security is absolutely guaranteed with American Airlines</p>
+            </div>
+        </div>
+    </section>
+    <section class="offers reveal fade-bottom">
+        <h3>Today's Offers</h3>
+        <div class="row">
+            <div class="col-4 reveal fade-bottom">
+                <img src="paris.webp" alt="" class="offers-image">
+                <h5>Trip to Paris</h5>
+                <p>From seasonal deals to early-birds discounts, find more ways to culture and save as you book them!
+                </p>
+                <div class="submit-btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        See deal
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 reveal fade-bottom2">
+                <img src="carlifornia.webp" alt="" class="offers-image">
+                <h5>Trip to California</h5>
+                <p>From seasonal deals to early-birds discounts, find more ways to culture and save as you book them!
+                </p>
+                <div class="submit-btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        See deal
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 reveal fade-bottom3">
+                <img src="los-angeles.webp" alt="" class="offers-image">
+                <h5>Trip to Los Angeles</h5>
+                <p>From seasonal deals to early-birds discounts, find more ways to culture and save as you book them!
+                </p>
+                <div class="submit-btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        See deal
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 all-deal">
+            <button class="btn btn-primary">veiw all Deal</button>
+        </div>
+    </section>
+    <section id="commitment" class="reveal fade-bottom">
+        <div class="row">
+            <div class="col-6 ">
+                <img src="commitment.webp" alt="" class="commitment-image">
+            </div>
+            <div class="col-6">
+                <h3 class="">American Airlines Commitment</h3>
+                <img src="commitment.webp" alt="" class="commitment-image2">
+                <p class="">We've enhanced our clearning procedures and added new protocols at every step to reduce risks when
+                    you fly. American airline cares about your health and everything that belong to you. We are here to
+                    give you the best commitment to your flight</p>
+                <p>We've enhanced our clearning procedures and added new protocols at every step to reduce risks when
+                    you fly. American airline cares about your health and everything that belong to you. We are here to
+                    give you the best commitment to your flight</p>
+                <button class="btn btn-primary">veiw all Deal</button>
+            </div>
+        </div>
+    </section>
+    <section id="app" class="reveal fade-bottom">
+        <div class="row bg-primary pt-5">
+            <div class="col-7 ps-5">
+                <div class="app">
+                    <h3>Download the American Airline app for easy access to travel</h3>
+                    <p>Make your next experience one smooth ride with the american airline app. Use it to discover your
+                        destination, plan on the go, store your tickets offline and enjoy exclusive, app-user perks.</p>
+                    <img src="app-store_prev_ui.webp" alt="" class="app-store">
+                </div>
+            </div>
+            <div class="col-5 ps-5">
+                <img src="mobile-app_prev_ui.webp" alt="" class="mobile-app">
+            </div>
+        </div>
+    </section>
+    <section id="tours-and-activities" class="reveal fade-bottom">
+        <h3>Tours and Activities</h3>
+        <div class="row">
+            <div class="col-4 bg-secondary france reveal fade-bottom">
+                <h5>France</h5>
+            </div>
+            <div class="col-4 reveal fade-bottom2">
+                <div class="tour2">
+                    <div class="germany">
+                        <h5>Germany</h5>
+                    </div>
+                    <div class="italy">
+                        <h5>Italy</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 reveal fade-bottom3">
+                <div class="tour2">
+                    <div class="london">
+                        <h5>London</h5>
+                    </div>
+                    <div class="australia">
+                        <h5>Australia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="travels-news" class="reveal fade-bottom">
+        <h3>Travel News</h3>
+        <div class="row">
+            <div class="col-4 reveal fade-bottom">
+                <img src="tourist1.webp" alt="" class="tour-images">
+                <h5>Travel Benefits</h5>
+                <p>From seasonal deals to early-birds discounts, find more ways to culture and save as you book them!
+                </p>
+                <div class="submit-btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 reveal fade-bottom2">
+                <img src="tourist3.webp" alt="" class="tour-images">
+                <h5>England Best Places</h5>
+                <p>From seasonal deals to early-birds discounts, find more ways to culture and save as you book them!
+                </p>
+                <div class="submit-btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 reveal fade-bottom3">
+                <img src="tourist2.webp" alt="" class="tour-images">
+                <h5>New York City</h5>
+                <p>From seasonal deals to early-birds discounts, find more ways to culture and save as you book them!
+                </p>
+                <div class="submit-btn">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="company">
+            <div>
+                <h5>About American Airline</h5>
+                <a href="">
+                    <p>About us</p>
+                </a>
+                <a href="">
+                    <p>Careers</p>
+                </a>
+                <a href="">
+                    <p>Investors Relations</p>
+                </a>
+                <a href="">
+                    <p>Newsroom</p>
+                </a>
+                <a href="">
+                    <p>Legal, Privacy, Copyright</p>
+                </a>
+                <a href="">
+                    <p>Enviromental, Social and Governance</p>
+                </a>
+                <a href="">
+                    <p>Combating Human trafficking</p>
+                </a>
+            </div>
+            <div>
+                <h5>Help</h5>
+                <a href="">
+                    <p>Contact American Airline</p>
+                </a>
+                <a href="">
+                    <p>Receipt and Refund</p>
+                </a>
+                <a href="">
+                    <p>FAQs</p>
+                </a>
+                <a href="">
+                    <p>Agency Reference</p>
+                </a>
+                <a href="">
+                    <p>Cargo</p>
+                </a>
+                <a href="">
+                    <p>Bags and Optional Fees</p>
+                </a>
+                <a href="">
+                    <p>Conditions of Carriage</p>
+                </a>
+            </div>
+            <div>
+                <h5>Extras</h5>
+                <a href="#">
+                    <p>Business Programs</p>
+                </a>
+                <a href="#">
+                    <p>Gift Cards</p>
+                </a>
+                <a href="#">
+                    <p>American Airline Credit Cards</p>
+                </a>
+                <a href="#">
+                    <p>Trip Insurance</p>
+                </a>
+            </div>
+            <div>
+                <img src="credit-card_prev_ui.webp" alt="" class="credit-card">
+            </div>
+        </div>
+        <div class="crd">
+            <img src="credit-card_prev_ui.webp" alt="" class="credit-card2">
+        </div>
+        <div class="copy">
+            <p>&copy; 2022 American Airline <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i></p>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

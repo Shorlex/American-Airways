@@ -1,0 +1,485 @@
+@media screen and (max-width: 1280px){
+    .fly-with-us{
+        width: 80%;
+        .row{
+            .col-3{
+                width: 21%;
+                margin-left: 4%;
+            }
+        }
+    }
+    .offers{
+        width: 80%;
+        .row{
+            .col-4{
+                width: 30%;
+                margin-left: 3%;
+                .offers-image{
+                    width: 108%;
+                    height: 60%;
+                }
+            }
+        }
+        .all-deal{
+            margin-left: 85%;
+        }
+    }
+    #commitment{
+        padding-top: 10%;
+    }
+    #tours-and-activities, #travels-news{
+        width: 80%;
+        .row{
+            .col-4{
+                width: 30%;
+                margin-left: 3%;
+                .tour-images{
+                    width: 108%;
+                }
+            }
+        }
+    }
+    nav{
+        .container-fluid{
+            .logos{
+                .logo{
+                    margin-left: 2%;
+                }
+            }
+            padding-left: 9.5%;
+            ul{
+                margin-left: 0%;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+    }
+    #app{
+        width: 98%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    nav{
+        padding: 0px 50px;
+        .container-fluid{
+            grid-template-columns: 9fr 1fr;
+            .logos{
+                .logo{
+                    margin-left: -230%;
+                }
+            }
+            .checkbtn{
+                display: block;
+                width: 10%;
+            }
+            ul{
+                width: 100%;
+                height: auto;
+                background-color: #fff;
+                opacity: 0.9;
+                position: fixed;
+                top: 65px;
+                right: -100%;
+                padding: 5px;
+                transition: .4s ease-in-out;
+                li{
+                    display: block;
+                    border-radius: 50px;
+                    overflow: visible;
+                    }
+                }
+            #check{
+                &:checked ~ ul{
+                    right: 0;
+                }
+            }
+        }
+    }
+    .offers, #travels-news{
+       
+        .row{
+            .col-4{
+                .tour-images{
+                    width: 111%;
+                    height: 50%;
+                }
+                .offers-image{
+                    width: 111%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 834px){
+    #home{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .row{
+            padding-left: 10px!important;
+            padding-right: 0 !important;
+            .col-6{
+                margin-top: 5%;
+                padding-bottom: 100px;
+                padding-right: 0px;
+                margin-left: 0;
+                opacity: 0;
+                h1{
+                    font-size: 200%;
+                }
+            }
+        }
+    }
+    #book-a-flight{
+        margin-top: -30px;
+        margin-left: 60px;
+        width: 80%;
+        height: 500%;
+        .form-content{
+            height: 200%;
+            .flight{
+                height: 200%;
+                .mb-2{
+                    .col-4{
+                        padding: 0 !important;
+                    }
+                }
+                .mb-5{
+                    margin-bottom: 0 !important;
+                    [class*="col-"] {
+                        width: 100%;
+                        margin-top: 5%;
+                        }
+                }
+                .mt-3{
+                    [class*="col-"] {
+                        width: 100%;
+                        margin-top: 5%;
+                        }
+                }
+                .book{
+                    margin-left: 30%;
+                }
+            }
+        }
+    }
+    .fly-with-us{
+        margin-left: 50px;
+        padding-top: 15%;
+        .row{
+            .col-3{
+                width: 47%;
+                margin-left: 3%;
+                margin-top: 3%;
+            }
+        }
+    }
+    .offers{
+        margin-left: 10%;
+        padding-top: 20%;
+        .row{
+            .col-4{
+                margin-top: 5%;
+                margin-left: 5%;
+                width: 45%;
+                .offers-image{
+                    width: 108%;
+                }
+            }
+        }
+        .all-deal{
+            margin-left: 3%;
+        }
+    }
+    #commitment{
+        margin-left: 10%;
+        padding-top: 10%;
+        .row{
+            .col-6{
+                width: 100%;
+                .commitment-image{
+                    display: none;
+                }
+                .commitment-image2{
+                    display: block;
+                    width: 100%;
+                }
+                p{
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+    #app{
+        padding-top: 15%;
+        .row{
+            .col-7{
+                .app{
+                    padding-left: 0;
+                    h3{
+                        margin-top: 0;
+                    }
+                    .app-store{
+                        width: 50%;
+                    }
+                }
+            }
+            .col-5{
+                padding-left: 0 !important;
+                .mobile-app{
+                    margin-left: 0;
+                    width: 90%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+    #tours-and-activities{
+        padding-top: 15%;
+        margin-left: 10%;
+        .row{
+            .col-4{
+                width: 45%;
+                margin-top: 1%;
+                margin-left: 5%;
+                &:last-child{
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+    #travels-news{
+        margin-left: 10%;
+        .row{
+            .col-4{
+                width: 45%;
+                margin-left: 5%;
+                &:last-child{
+                    margin-top: 5%;
+                }
+                .tour-images{
+                    width: 108%;
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        .company{
+            padding-left: 5%;
+            grid-template-columns: 1fr 1fr 1fr;
+            a{
+                p{
+                    margin-bottom: 0 !important;
+                }
+            }
+            .credit-card{
+                display: none;
+            }
+        }
+        .crd{
+            display: block;
+            margin-top: -10%;
+            padding-left: 25%;
+        }
+        .copy{
+            p{
+                margin-left: 25%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .offers, #travels-news{
+        .row{
+            .col-4{
+                .offers-image, .tour-images{
+                    width: 111%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    nav{
+        .container-fluid{
+            .logos{
+                h6{
+                    z-index: 1;
+                }
+                .logo{
+                    margin-left: -145%;
+                }
+            }
+        }
+    }
+    #home{
+        width: 100%;
+        background-size: cover;
+        background-position: right;
+        .row{
+            flex-flow: column-reverse;
+            .col-6{
+                width: 100%;
+                opacity: 1;
+                p, h1{
+                    color: white;
+                }
+            }
+        }
+        
+    }
+    #book-a-flight{
+        margin-left: 10%;
+        .form-content{
+            .flight{
+                .book{
+                    margin-left: 0;
+                }
+                label{
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+    .fly-with-us, .offers, #tours-and-activities, #travels-news{
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width: 414px){
+    #book-a-flight{
+        .form-content{
+            .mb-2{
+                .col-4{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .fly-with-us, .offers, #tours-and-activities, #travels-news{
+        margin-left: 10%;
+    }
+    .offers, #tours-and-activities, #travels-news{
+        width: 70%;
+    }
+    .offers{
+        .row{
+            .col-4{
+                width: 100%;
+                .offers-image{
+                    width: 109%
+                }
+            }
+        }
+    }
+    #travels-news{
+        .row{
+            .col-4{
+                width: 100%;
+                margin-top: 5%;
+                .tour-images{
+                    width: 109%
+                }
+            }
+        }
+    }
+    #tours-and-activities{
+        .row{
+            .col-4{
+                width: 100%;
+                margin-top: 5%;
+            }
+        }
+    }
+    #app{
+        .row{
+            padding-bottom: 5%;
+            .col-7{
+                .app{
+                    .app-store{
+                        width: 100%;
+                    }
+                }
+            }
+            .col-5{
+                padding-top: 15%;
+                .mobile-app{
+                    height: 60%;
+                }
+            }
+        }
+    }
+    .footer{
+        .copy{
+            p{
+                margin-left: 10%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    nav{
+        .container-fluid{
+            .logos{
+                .logo{
+                    margin-left: -130%;
+                }
+            }
+        }
+    }
+    #book-a-flight{
+        .form-content{
+            form{
+                .mt-3{
+                    .btn{
+                       width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .fly-with-us{
+        .row{
+            .col-3{
+                width: 100%;
+                margin-top: 5%;
+            }
+        }
+    }
+    .footer{
+        .crd{
+            padding-left: 10%;
+        }
+    }
+    #app{
+        width: 96%;
+        .row{
+            .col-7{
+                width: 100%;
+                .app-store{
+                    width: 50% !important;
+                }
+            }
+            .col-5{
+                width: 70%;
+                margin-left: 20%;
+                .mobile-app{
+                    height: 90%;
+                }
+            }
+        }
+    }
+    #commitment{
+        width: 85%;
+        .row{
+            .col-6{
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,7 @@
+@media screen and (max-width: 600px) {
+  .container-fluid .row .col-9 {
+    display: none;
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=media.css.map */
